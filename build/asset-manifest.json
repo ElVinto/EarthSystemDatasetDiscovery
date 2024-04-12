@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ExplainingOpenDiscovery/static/css/main.eefc237f.css",
+    "main.js": "/ExplainingOpenDiscovery/static/js/main.47c19933.js",
+    "index.html": "/ExplainingOpenDiscovery/index.html",
+    "main.eefc237f.css.map": "/ExplainingOpenDiscovery/static/css/main.eefc237f.css.map",
+    "main.47c19933.js.map": "/ExplainingOpenDiscovery/static/js/main.47c19933.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eefc237f.css",
+    "static/js/main.47c19933.js"
+  ]
+}
