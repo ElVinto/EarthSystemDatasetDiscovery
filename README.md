@@ -8,7 +8,7 @@ The ESDD app enables multi-source dataset discovery, from four data hub services
 and the atmosphere respectively.
 
 
-## 
+## Knowledge Graphs (KGs)
 To address the semantic and structural heterogeneities persisting from this multi-source metadata extraction, we transform harvested metadata descriptions into an harmonized RDF description using User Centric Metadata Model (UCMM) as a pivotal integration model. UCMM is mainly based on fundational ontologies including SOSA, SSN-EXT, DCAT, PROV vocabularies. 
 For each datahub service, The Knowledge Graph resulting from the transformation of dataset metadata descriptions can be found here :
 
@@ -18,13 +18,13 @@ For each datahub service, The Knowledge Graph resulting from the transformation 
 - [AERIS Knowledge Graph](https://github.com/ElVinto/EarthSystemDatasetDiscovery/blob/main/knowledge-graphs/AERIS_graph.zip)
 
 <!-- The Merge Knowledge Graph gathering harmonized metadata descriptions from all datahubs can be found here : [Merge Knowledge Graph] (https://github.com/ElVinto/EarthSystemDatasetDiscovery/blob/main/knowledge-graphs/MERGE_graph.zip) -->
-Other KGs are placed in the repository [knowledge-graphs](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/knowledge-graphs].
+All KGs are placed in the repository [knowledge-graphs](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/knowledge-graphs].
 
 
 
 ## Evaluation
 
-The result of preliminary experiments and evaluation showing the benefit of the Earth System Dataset Discovery application app can be found in the  [evaluation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/evaluation/) repository.
+The result of preliminary experiments and evaluation showing the benefit of the Earth System Dataset Discovery application app can be found in the  [evaluation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/evaluation/) repository.
 
 ## Source code
 The deployable source code of the app can be found here [source](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/react-app/) repository.
