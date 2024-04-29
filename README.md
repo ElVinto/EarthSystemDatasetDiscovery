@@ -24,8 +24,7 @@ Other KGs are placed in the repository [knowledge-graphs](https://github.com/ElV
 
 ## Evaluation
 
-The result of preliminary experiments and evaluation showing the benefit of the Earth System Dataset Discovery application app can be found in the repository [evaluation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/evaluation/).
+The result of preliminary experiments and evaluation showing the benefit of the Earth System Dataset Discovery application app can be found in the  [evaluation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/evaluation/) repository.
 
 ## Source code
-The deployable source code of the app can be found here :
-- [source](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/react-app/)
+The deployable source code of the app can be found here [source](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/react-app/) repository.
