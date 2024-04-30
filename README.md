@@ -4,13 +4,13 @@ Monitoring Earth System compartments, including the atmosphere, the solid earth,
 
 
 
-The ESDD app enables multi-source dataset discovery, from four data hub services: [ODATIS](https://www.odatis-ocean.fr/en), [THEIA](https://catalogue.theia-land.fr/), [FORM@TER](https://en.poleterresolide.fr/data-access/catalog/#/), and [AERIS](https://www.aeris-data.fr/en/catalogue-en/), representing each a compartment of the Earth System enabling access to data products and services to support the observation of the Ocean, the continental surfaces, the solid Earth
-and the atmosphere respectively.
+The ESDD app enables multi-source dataset discovery from four data hub services: [ODATIS](https://www.odatis-ocean.fr/en), [THEIA](https://catalogue.theia-land.fr/), [FORM@TER](https://en.poleterresolide.fr/data-access/catalog/#/), and [AERIS](https://www.aeris-data.fr/en/catalogue-en/).
+Each data-hub represents a compartment of the Earth System and enabled access to data products and services supporting the observation of the Ocean, the continental surfaces, the solid Earth and the atmosphere.
 
 
 ## Knowledge Graphs (KGs)
-To address the semantic and structural heterogeneities persisting from this multi-source metadata extraction, we transform harvested metadata descriptions into an harmonized RDF description using User Centric Metadata Model (UCMM) as a pivotal integration model. UCMM is mainly based on fundational ontologies including SOSA, SSN-EXT, DCAT, PROV vocabularies. 
-For each datahub service, The Knowledge Graph resulting from the transformation of dataset metadata descriptions can be found here :
+To address semantic and structural heterogeneities persisting from Earth System data hubs, we transform harvested dataset metadata into an harmonized RDF description using the User Centric Metadata Model (UCMM) as a pivotal integration model. UCMM is mainly based on fundational ontologies including SOSA, SSN-EXT, DCAT, PROV vocabularies. 
+For each datahub service, the Knowledge Graph resulting from the transformation from dataset metadata to UCMM instances can be found here :
 
 - [ODATIS knowledge Graph](https://github.com/ElVinto/EarthSystemDatasetDiscovery/blob/main/knowledge-graphs/ODATIS_graph.zip)
 - [THEIA Knowledge Graph](https://github.com/ElVinto/EarthSystemDatasetDiscovery/blob/main/knowledge-graphs/THEIA_graph.zip)
@@ -23,8 +23,7 @@ All KGs are placed in the repository [knowledge-graphs](https://github.com/ElVin
 
 
 ## Evaluation
-
-The result of preliminary experiments and evaluation showing the benefit of the Earth System Dataset Discovery application app can be found in the  [evaluation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/evaluation/) repository.
+The result of preliminary evaluation showing the benefit of the Earth System Dataset Discovery application app can be found in the  [evaluation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/evaluation/) repository.
 
 ## Source code
-The deployable source code of the app can be found here [source](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/react-app/) repository.
+The deployable source code of the app can be found in the [source](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/react-app/) repository.
