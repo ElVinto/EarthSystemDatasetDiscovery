@@ -25,7 +25,7 @@ S3 (water) | 8,98| 178,80| 0,12| - |
 S4 (carbon)| 0,15| 6,74| -| - |
 S5 (conductivity)| 0,96| 1,04| -| - |
 
-## Extented Evaluation
+## Extended Evaluation
 This extended evaluation adds new data hubs to the core evaluation that were previously indisponible (FORMATER, AERIS). Besides, this evaluation showcases the benefit of enabling Open Linked Discovery for retrieving relevant datasets in a multidisciplinary context.
 
 ### Number of retrieved datasets
