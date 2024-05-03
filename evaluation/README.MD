@@ -26,7 +26,8 @@ S4 (carbon)| 0,15| 6,74| -| - |
 S5 (conductivity)| 0,96| 1,04| -| - |
 
 ## Extended Evaluation
-This extended evaluation adds new data hubs to the core evaluation that were previously indisponible (FORMATER, AERIS). Besides, this evaluation showcases the benefit of enabling Open Linked Discovery for retrieving relevant datasets in a multidisciplinary context.
+This extended evaluation adds new data hubs to the core evaluation that were previously unavailable (FORMATER, AERIS).
+<!-- Besides, this evaluation showcases the benefit of enabling Dataset Discovery for retrieving relevant datasets in a multidisciplinary context. -->
 
 ### Number of retrieved datasets
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
