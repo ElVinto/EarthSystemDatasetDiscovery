@@ -1,0 +1,17 @@
+/*
+npm run build && ssh -i ~/.ssh/portableHP.pem ec2-user@13.38.36.148 'rm -rf ~/tomcat9/webapps/ReactRestApiCall/*' && scp -r -i ~/.ssh/portableHP.pem ./build/* ec2-user@13.38.36.148:~/tomcat9/webapps/ReactRestApiCall/
+*/
+
+/*
+npm run build && 
+ssh -i ~/.ssh/portableHP.pem ubuntu@13.38.99.184 'rm -rf ExplainingOpenDiscovery' &&
+ssh -i ~/.ssh/portableHP.pem ubuntu@13.38.99.184 'mkdir ExplainingOpenDiscovery' &&
+scp -r -i ~/.ssh/portableHP.pem ./build/* ubuntu@13.38.99.184:~/ExplainingOpenDiscovery/ &&
+ssh -i ~/.ssh/portableHP.pem ubuntu@13.38.99.184 'sudo rm -rf /opt/tomcat/updated/webapps/ExplainingOpenDiscovery' &&
+ssh -i ~/.ssh/portableHP.pem ubuntu@13.38.99.184 'sudo cp -R  ExplainingOpenDiscovery  /opt/tomcat/updated/webapps/' &&
+ssh -i ~/.ssh/portableHP.pem ubuntu@13.38.99.184 'sudo chown -R tomcat:tomcat  /opt/tomcat/updated/webapps/ExplainingOpenDiscovery' 
+*/
+
+/*
+13.36.171.5
+*/
