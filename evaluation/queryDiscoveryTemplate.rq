@@ -1,0 +1,36 @@
+# replace %s by the search term 
+
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX sosa: <http://www.w3.org/ns/sosa/>
+PREFIX ucmm: <http://purl.org/ucmm#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+SELECT DISTINCT (COUNT(?dataset) AS ?count)
+WHERE{
+  {
+    ?dataset rdf:type dcat:Dataset .
+    ?dataset ?p ?concept .
+    ?concept skos:prefLabel ?searchLabel .
+  }UNION{
+    ?dataset rdf:type dcat:Dataset .
+    ?dataset dcterms:description|dcterms:title|dcat:keyword ?searchLabel.
+  }UNION{
+    ?dataset rdf:type dcat:Dataset .
+    ?obsColl ucmm:hasAggregatedResult ?dataset .
+    ?obsColl rdf:type sosa:ObservationCollection .
+    ?obsColl  ?obsCollProp ?concept.
+    ?concept skos:prefLabel ?searchLabel .
+  }UNION{
+    ?obsColl  (^sosa:hasMember) ?obsCollParent.
+    ?obsColl  ?obsCollProp ?concept.
+    ?concept skos:prefLabel ?searchLabel .
+    OPTIONAL{
+        ?dataset rdf:type dcat:Dataset .
+        ?obsCollParent ucmm:hasAggregatedResult ?dataset .
+    }
+  }
+  FILTER (strlen(str(?dataset)) > 0)
+  FILTER (regex(?searchLabel,"%s","i") )
+  FILTER (lang(?searchLabel)="en")
+}
