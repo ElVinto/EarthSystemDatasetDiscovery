@@ -4,6 +4,12 @@
 In the context of multidisciplinary and multisource datasets search, this evaluation shows the benefit of discovering dataset over harmonized dataset metadata compare to dataset search carried out on individual portal.
 In this preliminary experiments, we consider 3 data-hubs ( ODATIS, THEIA-Land, THEIA-Hydro) along with five different searchs ( S1="Temperature" , S2="Air", S3 = "Water", S4 = "Carbon", S5 = "Conductivity"). In favour of reproducibility, we share in this folder the corresponding query: queryDiscoveryTemplate.rq.
 
+### Knowledge graph stats
+|  | ODATIS | THEIA-LAND | THEIA-HYDRO | merged-KG |
+|--------|--------|------------|-------------|-----------|
+Number of datasets |10930 |337 | 24594 | 35861 |
+Number of triples |669857 | 18071 | 1032948 | 1720876 |
+
 
 ### Number of retrieved datasets
 
@@ -15,7 +21,8 @@ S3 (water) | 8265| 459| 73806| 82530 |
 S4 (carbon)| 539| 80| 0| 619 |
 S5 (conductivity)| 98| 94| 0| 192 |
 
-### Dataset gain ration
+### Dataset gain ratio
+ We calculate the dataset gain ratio as (\# of results (merged KG) - \# of results (data hub))/ \# of results (data hub).} 
 
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | merged-KG |
 |--------|--------|------------|-------------|-----------|
@@ -28,6 +35,12 @@ S5 (conductivity)| 0,96| 1,04| -| - |
 ## Extended Evaluation
 This extended evaluation adds new data hubs to the core evaluation that were previously unavailable (FORMATER, AERIS).
 <!-- Besides, this evaluation showcases the benefit of enabling Dataset Discovery for retrieving relevant datasets in a multidisciplinary context. -->
+### Knowledge graph stats
+|  | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
+|--------|--------|------------|-------------|----------|-------|----------|
+Number of datasets|10930 |337 | 24594 | 35861 |255 | 2786| 38902 |
+Number of triples |669857 | 18071 | 1032948 | 1720876 |13263 | 53493 | 1787632 | 
+
 
 ### Number of retrieved datasets
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
@@ -38,7 +51,7 @@ S3 (water) | 8265 | 459 | 73806 | 28 | 232 | 82790
 S4 (carbon) | 539 | 80 | 0 | 4 | 121 | 744
 S5 (conductivity) | 98 | 94 | 0 | 0 | 9 | 201
 
-### Dataset gain factor
+### Dataset gain ratio
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
 |--------|--------|------------|-------------|----------|-------|----------|
 S1 (temperature) | 0,16  | 20,56  | - | 67,54  | 12,43  | -
