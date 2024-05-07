@@ -2,7 +2,7 @@
 
 ## Core Evaluation
 In the context of multidisciplinary and multisource datasets search, this evaluation shows the benefit of discovering dataset over harmonized dataset metadata compare to dataset search carried out on individual portal.
-In this preliminary experiments, we consider 3 data-hubs ( ODATIS, THEIA-Land, THEIA-Hydro) along with five different searchs ( S1="Temperature" , S2="Air", S3 = "Water", S4 = "Carbon", S5 = "Conductivity")
+In this preliminary experiments, we consider 3 data-hubs ( ODATIS, THEIA-Land, THEIA-Hydro) along with five different searchs ( S1="Temperature" , S2="Air", S3 = "Water", S4 = "Carbon", S5 = "Conductivity"). In favour of reproducibility, we share in this folder the corresponding query: queryDiscoveryTemplate.rq.
 
 
 ### Number of retrieved datasets
