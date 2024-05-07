@@ -38,8 +38,8 @@ This extended evaluation adds new data hubs to the core evaluation that were pre
 ### Knowledge graph stats
 |  | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
 |--------|--------|------------|-------------|----------|-------|----------|
-Number of datasets|10930 |337 | 24594 | 35861 |255 | 2786| 38902 |
-Number of triples |669857 | 18071 | 1032948 | 1720876 |13263 | 53493 | 1787632 | 
+Number of datasets|10930 |337 | 24594  |255 | 2786| 38902 |
+Number of triples |669857 | 18071 | 1032948 | 13263 | 53493 | 1787632 | 
 
 
 ### Number of retrieved datasets
