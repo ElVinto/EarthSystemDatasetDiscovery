@@ -6,7 +6,7 @@ PREFIX ucmm: <http://purl.org/ucmm#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX dcat: <http://www.w3.org/ns/dcat#>
 PREFIX dcterms: <http://purl.org/dc/terms/>
-SELECT DISTINCT (COUNT(?dataset) AS ?count)
+SELECT  (COUNT(DISTINCT ?dataset) AS ?count)
 WHERE{
   {
     ?dataset rdf:type dcat:Dataset .

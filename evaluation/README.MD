@@ -26,11 +26,12 @@ S5 (conductivity)| 98| 94| 0| 192 |
 
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | merged-KG |
 |--------|--------|------------|-------------|-----------|
-S1 (temperature) | 0,05| 18,64| -| - |
-S2 (air)| 0,08| 14,21| 122,48| - |
-S3 (water) | 8,98| 178,80| 0,12| - |
-S4 (carbon)| 0,15| 6,74| -| - |
-S5 (conductivity)| 0,96| 1,04| -| - |
+S1 (temperature)DDDDDZ0,07 	14,36 	-	-
+S2 (air)	0,05 	25,90 	74,32 	-
+S3 (water)	10,21 	142,97 	0,11 	-
+S4 (carbon)	0,15 	6,70 	-	-
+S5 (conductivity)	1,30 	0,77 	-	-
+
 
 ## Extended Evaluation
 This extended evaluation adds new data hubs to the core evaluation that were previously unavailable (FORMATER, AERIS).
@@ -45,17 +46,18 @@ Number of triples |669857 | 18071 | 1032948 | 13263 | 53493 | 1787632 | 
 ### Number of retrieved datasets
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
 |--------|--------|------------|-------------|----------|-------|----------|
-S1 (temperature) | 4622 | 248 | 0 | 78 | 398 | 5346
-S2 (air) | 2859 | 203 | 25 | 25 | 537 | 3649
-S3 (water) | 8265 | 459 | 73806 | 28 | 232 | 82790
-S4 (carbon) | 539 | 80 | 0 | 4 | 121 | 744
-S5 (conductivity) | 98 | 94 | 0 | 0 | 9 | 201
+S1 (temperature)| 1149| 80| 0| 33| 378| 1640
+S2 (air)| 1788| 70| 25| 25| 491| 2399
+S3 (water)| 2427| 189| 24594| 28| 200| 27438
+S4 (carbon)| 268| 40| 0| 2| 99| 409
+S5 (conductivity)| 54| 70| 0| 0| 9| 133
+
 
 ### Dataset gain ratio
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | FORMATER | AERIS |merged-KG |
 |--------|--------|------------|-------------|----------|-------|----------|
-S1 (temperature) | 0,16  | 20,56  | - | 67,54  | 12,43  | -
-S2 (air) | 0,28  | 16,98  | 144,96  | 144,96  | 5,80  | -
-S3 (water) | 9,02  | 179,37  | 0,12  | 2955,79  | 355,85  | -
-S4 (carbon) | 0,38  | 8,30  | - | 185,00  | 5,15  | -
-S5 (conductivity) | 1,05  | 1,14  | - | - | 21,33  | -
+S1 (temperature) | 0,43  | 19,50  | - | 48,70  | 3,34  | -
+S2 (air) | 0,34  | 33,27  | 94,96  | 94,96  | 3,89  | -
+S3 (water) | 10,31  | 144,17  | 0,12  | 978,93  | 136,19  | -
+S4 (carbon) | 0,53  | 9,23  | - | 203,50  | 3,13  | -
+S5 (conductivity) | 1,46  | 0,90  | - | - | 13,78  | -
