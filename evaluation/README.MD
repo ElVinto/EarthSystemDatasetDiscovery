@@ -15,22 +15,23 @@ Number of triples |669857 | 18071 | 1032948 | 1720876 |
 
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | merged-KG |
 |--------|--------|------------|-------------|-----------|
-S1 (temperature) | 4622| 248| 0| 4870 |
-S2 (air)| 2859| 203| 25| 3087 |
-S3 (water) | 8265| 459| 73806| 82530 |
-S4 (carbon)| 539| 80| 0| 619 |
-S5 (conductivity)| 98| 94| 0| 192 |
+S1 (temperature)| 1149| 80| 0| 1229
+S2 (air)| 1788| 70| 25| 1883
+S3 (water)| 2427| 189| 24594| 27210
+S4 (carbon)| 268| 40| 0| 308
+S5 (conductivity)| 54| 70| 0| 124
+
 
 ### Dataset gain ratio
  We calculate the dataset gain ratio as (\# of results (merged KG) - \# of results (data hub))/ \# of results (data hub).} 
 
 | Search | ODATIS | THEIA-LAND | THEIA-HYDRO | merged-KG |
 |--------|--------|------------|-------------|-----------|
-S1 (temperature)DDDDDZ0,07 	14,36 	-	-
-S2 (air)	0,05 	25,90 	74,32 	-
-S3 (water)	10,21 	142,97 	0,11 	-
-S4 (carbon)	0,15 	6,70 	-	-
-S5 (conductivity)	1,30 	0,77 	-	-
+S1 (temperature)| 0,07 | 14,36 | -| -
+S2 (air)| 0,05 | 25,90 | 74,32 | -
+S3 (water)| 10,21 | 142,97 | 0,11 | -
+S4 (carbon)| 0,15 | 6,70 | -| -
+S5 (conductivity)| 1,30 | 0,77 | -| -
 
 
 ## Extended Evaluation
