@@ -1,0 +1,106 @@
+@prefix dash: <http://datashapes.org/dash#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ucmm: <http://purl.org/ucmm#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix ucmm_shapes: <http://purl.org/ucmm/shapes#> .
+@prefix ex: <http://example.org#> .
+
+sosa:ObservationCollection
+    rdf:type rdfs:Class .
+
+# master observationCollection
+ucmm_shapes:ObservationCollectionTreeRootShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf ucmm:hasAggregatedResult ;
+    sh:property [
+          sh:path ucmm:hasAggregatedResult ;
+          sh:minCount 1;
+          sh:maxCount 1;
+          sh:class dcat:Dataset
+      ].
+
+ucmm_shapes:ObservationCollectionTreeNodeShape
+    a sh:NodeShape ;
+    sh:targetClass sosa:ObservationCollection;
+    sh:property [
+          sh:path sosa:hasMember ;
+          sh:class sosa:ObservationCollection
+      ].
+    # sh:property [
+    #       sh:path ( ucmm:hasDataRepresentation dct:temporal time:hasBeginning time:inXSDDateTimeStamp);
+    #       sh:datatype xsd:dateTimeStamp;
+    #       sh:lessThan ( ucmm:hasDataRepresentation dct:temporal time:hasEnding time:inXSDDateTimeStamp) ;
+    #       sh:maxCount 1].
+
+
+ucmm_shapes:IntervalShape a sh:NodeShape ;
+ sh:targetClass time:Interval ;
+
+    sh:property [
+        sh:path time:hasBeginning;
+        sh:class time:Instant;];
+    
+    sh:property [
+        sh:path time:hasEnding;
+        sh:class time:Instant;];
+
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Begin Date must be less than End Date";
+        sh:prefixes [
+        sh:declare [
+            sh:prefix "time" ;
+            sh:namespace "http://www.w3.org/2006/time#"^^xsd:anyURI ;
+        ];
+        sh:declare [
+            sh:prefix "xsd" ;
+            sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ;
+        ]  
+        ];
+    sh:select
+        """SELECT $this ?begin ?end
+        WHERE {
+            $this time:hasBeginning/time:inXSDDateTimeStamp ?begin.
+            $this time:hasEnding/time:inXSDDateTimeStamp ?end.
+            FILTER(xsd:dateTime(?begin) > xsd:dateTime(?end))
+        }""" ;
+    ].
+
+ucmm_shapes:InstantShape a sh:NodeShape ;
+    sh:targetClass time:Instant;
+    sh:property [
+        sh:path time:inXSDDateTimeStamp;
+        sh:datatype xsd:dateTimeStamp;
+        sh:minCount 1].
+
+
+ucmm_shapes:GeometryShape a sh:NodeShape ;
+    sh:targetClass geo:Geometry;
+    sh:property [
+        sh:path geo:asWKT;
+        sh:datatype geo:wktLiteral;
+        sh:minCount 1].
+
+
+# dataset cannot be a blank node
+ucmm_shapes:DatasetShape a sh:NodeShape ;
+ sh:targetClass dcat:Dataset ;
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message "Datasets cannot be blank nodes";
+        
+    sh:select
+        """SELECT $this 
+        WHERE {
+            FILTER isBLANK($this)
+        }""" ;
+    ].
