@@ -4,7 +4,7 @@ Different shapes based on the w3c recommendation, SHACL, are implemented in this
 
 So far, we present the main constrainst:
 
-* <b>Tree Root Observation Collection Shape:</b> In the model UCMM observation collection are organised as a tree structured, this contraint ensures that an the root collection is linked to exactly one dcat:Dataset.
+* <b>Tree Root Observation Collection Shape:</b> In the model UCMM observation collections are organised as a tree structured, this contraint ensures that the root collection is linked to exactly one dcat:Dataset.
 
 * <b>Interval Shape:</b> This constraint validates that the begin date must be before than the end date conserning the perioid of dataset generation.
 
