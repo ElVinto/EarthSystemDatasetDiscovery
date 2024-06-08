@@ -29,4 +29,4 @@ The result of preliminary evaluation showing the benefit of the Earth System Dat
 The deployable source code of the app can be found in the [source](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/react-app/) repository.
 
 ## Validation
-The Shacl shape file can be found in the [validation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/validation/) repository.
+The SHACL shape file can be found in the [validation](https://github.com/ElVinto/EarthSystemDatasetDiscovery/tree/main/validation/) repository.
