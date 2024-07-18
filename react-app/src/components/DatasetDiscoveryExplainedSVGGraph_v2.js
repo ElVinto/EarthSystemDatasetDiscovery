@@ -1071,13 +1071,9 @@ export default function DatasetDiscoveryExplainedSVGGraph_v2 ({kbUri, termInfo, 
                 // really matter since the target alpha is zero and the simulation will
                 // stop naturally, but it’s a good practice.)
                 //  simulation.stop();
-
-
                 setCurrentlyVisualisedTerm(currentlyExplainedTerm);
 
             }
-
-
 
         }, [termInfo, d3Graph] // nodes, links
     );
